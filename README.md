@@ -1,16 +1,41 @@
-# React + Vite
+# Weather Agent Showcase 🌦️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, frontend-only AI Agent application that answers weather queries using a **ReAct-style loop** (Reason → Act → Observe).
 
-Currently, two official plugins are available:
+## 🚀 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This app features a fully autonomous AI agent running entirely in the browser. It intelligently uses tools to fetch real-world data and provide accurate, context-aware answers.
 
-## React Compiler
+### ✨ Key Features
+- **ReAct Agent Loop**: Watch the AI "think" through Plan, Action, Observe, and Output steps in real-time.
+- **Color-Coded Feedback**: Each step of the ReAct process is visually distinct for better understanding.
+- **Glassmorphism UI**: A sleek, modern design with frosted glass effects and vibrant accents.
+- **Local Usage Limits**: Built-in daily query tracking (5 queries/day) using `localStorage`.
+- **Flexible Tokens**: Detects environment API keys automatically, with a fallback for user-provided tokens.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technical Stack
+- **Framework**: React + Vite
+- **AI Backend**: GitHub AI Inference API (GPT-4o-mini)
+- **Data Source**: `wttr.in` (for real-time weather)
+- **Styling**: Vanilla CSS (Modern CSS variables, Flexbox/Grid)
 
-## Expanding the ESLint configuration
+## 📦 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/Prodipsen27/weather_agent.git
+   ```
+2. **Setup environment:**
+   Create a `.env` file in the root directory:
+   ```env
+   VITE_GITHUB_TOKEN=your_github_token_here
+   ```
+3. **Install and Run:**
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+## 🌐 Deployment
+
+This project is configured for one-click deployment to **Netlify**. Simply connect your GitHub repo and add the `VITE_GITHUB_TOKEN` to your environment variables.
