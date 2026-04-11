@@ -1,7 +1,7 @@
 # Weather Agent Showcase 🌦️
 
 A premium, frontend-only AI Agent application that answers weather queries using a **ReAct-style loop** (Reason → Act → Observe).
-
+Live: https://weatheragent27.netlify.app/
 ## 🚀 Overview
 
 This app features a fully autonomous AI agent running entirely in the browser. It intelligently uses tools to fetch real-world data and provide accurate, context-aware answers.
